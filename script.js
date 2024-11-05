@@ -1,3 +1,11 @@
+// Verifica si la página se está viendo en un dispositivo móvil
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerWidth > 768) { // Verifica si el ancho es mayor a 768px (tablet o escritorio)
+        document.body.innerHTML = '<div style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center;"><h2>Esta página solo está disponible en dispositivos móviles</h2></div>';
+        return; // Detiene el resto del script si no es móvil
+    }
+});
+
 const countdownDate = new Date("Jan 24, 2025 17:00:00").getTime(); // Inicio de la cuenta regresiva
 
 function padNumber(number) {

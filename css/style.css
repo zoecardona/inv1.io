@@ -413,7 +413,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
   /*ubicaciuon*/
   .enlace-sobre-imagen {
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
@@ -427,14 +427,14 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
     .enlace-sobre-imagen1 {
         position: absolute;
-        bottom: 168px;
+        bottom: 137px;
         left: 83%;
         transform: translateX(-83%);
         padding: 50px 20px;
         border-radius: 1px;
         text-decoration: none;
         color: #333;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: bold;
         z-index: 1;
         letter-spacing: 0px;
@@ -499,7 +499,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
     /* Enlaces superpuestos en imágenes */
     .enlace-sobre-imagen, .enlace-sobre-imagen1 {
-        font-size: 18px;
+        font-size: 15px;
         padding: 15px;
     }
 
@@ -535,4 +535,28 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
     .footer-new-bottom__text {
         font-size: 10px;
     }
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    body > *:not(.mobile-message) {
+        display: none;
+    }
+
+    .mobile-message {
+        display: block;
+        font-size: 24px;
+    }
+}
+
+/* Mensaje que aparecerá solo en pantallas grandes */
+.mobile-message {
+    display: none;
 }
