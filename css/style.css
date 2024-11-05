@@ -427,7 +427,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
     .enlace-sobre-imagen1 {
         position: absolute;
-        bottom: 16vh;
+        bottom: 17vh;
         left: 88%;
         transform: translateX(-88%);
         padding: 50px 20px;
