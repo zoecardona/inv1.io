@@ -427,9 +427,9 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
     .enlace-sobre-imagen1 {
         position: absolute;
-        bottom: 15vh;
-        left: 80%;
-        transform: translateX(-80%);
+        bottom: 16vh;
+        left: 88%;
+        transform: translateX(-88%);
         padding: 50px 20px;
         border-radius: 1px;
         text-decoration: none;
@@ -438,6 +438,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
         font-weight: bold;
         z-index: 1;
         letter-spacing: 0px;
+	white-space: nowrap; /* Evita que el texto se divida en dos líneas */
         }
 
         /*footer*/
