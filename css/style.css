@@ -373,7 +373,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    gap: 20px; /* Espaciado entre cada unidad */
+    gap: 2px; /* Espaciado entre cada unidad */
 }
 
 #countdown div {
@@ -382,7 +382,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
 #countdown p {
     margin: 0;
-    font-size: 3rem; /* Tamaño de los números */
+    font-size: 3.5rem; /* Tamaño de los números */
     font-weight: bold;
 }
 
@@ -391,7 +391,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 }
 
 #countdown span {
-    font-size: 1rem; /* Tamaño de los textos debajo */
+    font-size: 1.3rem; /* Tamaño de los textos debajo */
     text-transform: uppercase;
     margin-top: 10px; /* Espacio entre el número y el texto */
     display: block;
@@ -399,7 +399,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 }
 .allison-regular {
     font-family: "Allison", cursive;
-    font-size: 80px;
+    font-size: 150px;
     font-style: normal;
   }
   
@@ -417,21 +417,21 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
     left: 50%;
     transform: translateX(-50%);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 1px;
     text-decoration: none;
     color: #333;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     z-index: 1;
     }
 
     .enlace-sobre-imagen1 {
         position: absolute;
-        bottom: 145px;
+        bottom: 168px;
         left: 83%;
         transform: translateX(-83%);
-        padding: 10px;
-        border-radius: 10px;
+        padding: 50px 20px;
+        border-radius: 1px;
         text-decoration: none;
         color: #333;
         font-size: 15px;
@@ -450,4 +450,89 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
             padding: 0;
         }
 
-        
+        /* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Redimensionar texto en pantallas pequeñas */
+    h1, .Letra8, #save-date {
+        font-size: 36px;
+    }
+
+    .letra9, .letra15, .letra16 {
+        font-size: 14px;
+    }
+
+    .letra7 {
+        font-size: 14px;
+    }
+
+ /* Reajustar el countdown para móviles */
+#countdown {
+    display: flex;
+    flex-direction: row; /* Asegura que sea horizontal */
+    justify-content: center;
+    gap: 10px; /* Espaciado entre cada unidad */
+}
+
+#countdown div {
+    font-size: 1.5rem;
+    text-align: center; /* Centra el texto dentro de cada bloque */
+}
+
+#countdown p {
+    margin: 0;
+    font-size: 2rem; /* Tamaño de los números */
+    font-weight: bold;
+}
+
+    /* Ajustar tamaños de imagen y galerías */
+    #galeria img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Botones */
+    .de-button {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    /* Enlaces superpuestos en imágenes */
+    .enlace-sobre-imagen, .enlace-sobre-imagen1 {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    /* Ajustar estilos del footer */
+    .footer-new-bottom__text {
+        font-size: 12px;
+        opacity: 0.6;
+    }
+}
+
+/* Ajustes para pantallas extremadamente pequeñas (teléfonos) */
+@media (max-width: 576px) {
+    h1, .Letra8, #save-date {
+        font-size: 30px;
+    }
+
+    .letra10 {
+        font-size: 20px;
+    }
+
+    .allison-regular {
+        font-size: 60px;
+    }
+
+
+    /* Ajustar botones para pantallas pequeñas */
+    .de-button {
+        padding: 6px 16px;
+        font-size: 10px;
+    }
+
+    /* Footer */
+    .footer-new-bottom__text {
+        font-size: 10px;
+    }
+}
