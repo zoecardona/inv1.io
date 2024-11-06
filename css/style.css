@@ -419,7 +419,7 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
     padding: 10px;
     border-radius: 1px;
     text-decoration: none;
-    color: #333;
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-weight: bold;
     z-index: 1;
@@ -427,18 +427,20 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
 
     .enlace-sobre-imagen1 {
         position: absolute;
-        bottom: 17vh;
-        left: 88%;
-        transform: translateX(-88%);
-        padding: 50px 20px;
+        bottom: 17.5vh;
+        left: 95%;
+        transform: translateX(-95%);
+        padding: 10px 5px; /* Reducir el padding para evitar que ocupe más espacio */
         border-radius: 1px;
         text-decoration: none;
-        color: #333;
+        color: black;
         font-size: 10px;
         font-weight: bold;
         z-index: 1;
         letter-spacing: 0px;
-	white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+        white-space: nowrap; /* Evita que el texto se divida en dos líneas */
+        
+
         }
 
         /*footer*/
@@ -497,10 +499,17 @@ a.de-button.large.rounded, span.de-button.large.rounded, input[type=submit].larg
         padding: 8px 20px;
         font-size: 12px;
     }
-
     /* Enlaces superpuestos en imágenes */
-    .enlace-sobre-imagen, .enlace-sobre-imagen1 {
+    .enlace-sobre-imagen1 {
         font-size: 12px;
+        padding: 15px;
+        text-align: center; /* Centra el contenido horizontalmente */
+        
+    }
+
+     /* Enlaces superpuestos en imágenes */
+     .enlace-sobre-imagen {
+        font-size: 15px;
         padding: 15px;
     }
 
